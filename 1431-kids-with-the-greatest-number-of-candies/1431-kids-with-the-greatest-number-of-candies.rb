@@ -5,9 +5,8 @@ def kids_with_candies(candies, extra_candies)
     #find max of array
     #loop through array - if candies[i] + extra > max, shovel true, else false
     results = []
-    max = candies.max
     candies.each do |candy|
-        if candy + extra_candies >= max
+        if candy + extra_candies >= candies.max
             results << true
         else
             results << false
